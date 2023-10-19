@@ -1,9 +1,9 @@
 
-// import java.beans.Statement;
+// This is the basic project on student management system where you can sign up with the security key 8008 and login in 
+// Connect the mysql connector jar 
+// Add the connector to the vs code 
 import java.sql.*;
 import java.util.Scanner;
-// import com.mysql.cj.jdbc.Driver;
-
 public class App {
     public static void main(String[] args) {
         int choices = 0;
@@ -49,9 +49,6 @@ public class App {
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/SMS", "root", "Akartik@121");
             Statement st = (Statement) con.createStatement();
             ResultSet rs = ((java.sql.Statement) st).executeQuery("Select * from login");
-            // if any error occur see this line just remove the do while with while loop and
-            // initialise the id1="" and pass=""
-
             while (rs.next()) {
                 id1 = rs.getString(1);
                 pass = rs.getString(2);
@@ -87,6 +84,7 @@ public class App {
                 name = data.nextLine();
                 try {
                     Class.forName("com.mysql.cj.jdbc.Driver");
+                    // Make sure that you have my sql command line client and remember to change the password pf the root user
                     Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/SMS", "root",
                             "Akartik@121");
                     // for preparing the new entries
