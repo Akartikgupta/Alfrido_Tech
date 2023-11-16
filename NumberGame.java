@@ -1,6 +1,8 @@
+// Number Game 
+// In this the user is to guess the number repeatdly until user it right 
+// Return the number of guess that user used to guess it 
 import java.util.Random;
 import java.util.Scanner;
-
 public class NumberGame {
     public static void main(String[] args) {
         int answer, guess;
