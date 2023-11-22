@@ -1,6 +1,7 @@
 // Word Counter Program 
 // In this program user input the string 
 // It return the number of the words it contain
+
 import java.util.Scanner;
 public class Word_Counter {
     public static void main(String[] args) {
