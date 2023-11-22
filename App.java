@@ -2,6 +2,7 @@
 // This is the basic project on student management system where you can sign up with the security key 8008 and login in 
 // Connect the mysql connector jar 
 // Add the connector to the vs code 
+
 import java.sql.*;
 import java.util.Scanner;
 public class App {
